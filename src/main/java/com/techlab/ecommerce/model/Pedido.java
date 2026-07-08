@@ -23,7 +23,7 @@ public class Pedido {
     public Pedido() {
     }
 
-    // Método requerido por la consigna para calcular el total del pedido
+    
     public void calcularTotal() {
         double suma = 0;
         // Recorremos la colección (Lista) usando un bucle for-each
