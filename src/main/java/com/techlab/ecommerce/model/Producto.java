@@ -16,7 +16,10 @@ public class Producto {
     
     private String nombre; 
     private double precio; 
-    private int stock;     
+    private int stock;  
+    private String descripcion;
+    private String categoria;
+    private String imagenUrl;   
 
     // Constructor vacío
     public Producto() {
@@ -86,4 +89,17 @@ public class Producto {
     public void setStock(int stock) {
         this.stock = stock;
     }
+
+    public String getDescripcion() { return descripcion; }
+    public void setDescripcion(String descripcion) { this.descripcion = descripcion; }
+
+
+    public String getCategoria() { return categoria; } // O getCategory si usaste inglés
+    public void setCategoria(String categoria) { this.categoria = categoria; }
+
+    public String getImagenUrl() { return imagenUrl; }
+    public void setImagenUrl(String imagenUrl) { this.imagenUrl = imagenUrl; }
+
+
+
 }
