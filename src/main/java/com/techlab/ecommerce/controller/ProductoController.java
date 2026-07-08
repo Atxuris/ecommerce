@@ -3,6 +3,8 @@ package com.techlab.ecommerce.controller;
 import com.techlab.ecommerce.model.Producto;
 import com.techlab.ecommerce.repository.ProductoRepository;
 
+import jakarta.validation.Valid;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,7 +14,7 @@ import java.util.List;
 @RequestMapping("/api/productos")
 public class ProductoController {
 
-    // Al poner final, nos aseguramos de que no cambie y obligamos a usar el constructor
+    
     private final ProductoRepository productoRepository;
 
     // Este constructor reemplaza al @Autowired. Spring pasa el repositorio por acá automáticamente.
@@ -28,7 +30,7 @@ public class ProductoController {
 
     // 2. CREAR UN PRODUCTO (POST)
     @PostMapping
-    public Producto crearProducto(@RequestBody Producto producto) {
+    public Producto crearProducto(@Valid @RequestBody Producto producto) {
         return productoRepository.save(producto);
     }
 
