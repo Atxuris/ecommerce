@@ -16,7 +16,7 @@ public class Pedido {
     // el pedido se guarden automáticamente todas sus líneas en la base de datos.
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "pedido_id") // Une las tablas en la Base de Datos
-    private List<LineaPedido> lineas = new ArrayList<>(); // Aplicamos Colecciones/Listas
+    private List<LineaPedido> lineas = new ArrayList<>();
 
     private double total;
 

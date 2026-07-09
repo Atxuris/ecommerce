@@ -16,7 +16,7 @@ public class PedidoService {
     private final PedidoRepository pedidoRepository;
     private final ProductoRepository productoRepository;
 
-    // Un único constructor que recibe ambos repositorios y limpia las líneas amarillas
+   
     public PedidoService(PedidoRepository pedidoRepository, ProductoRepository productoRepository) {
         this.pedidoRepository = pedidoRepository;
         this.productoRepository = productoRepository;

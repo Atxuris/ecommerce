@@ -10,11 +10,11 @@ public class LineaPedido {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @ManyToOne // Muchos ítems de línea pueden pertenecer a un mismo Producto
+    @ManyToOne
     @JoinColumn(name = "producto_id")
     private Producto producto;
 
-    private int cantidad; // int para cantidades como pide la consigna
+    private int cantidad;
 
     public LineaPedido() {
     }
